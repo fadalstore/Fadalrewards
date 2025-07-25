@@ -2,36 +2,113 @@
 <html lang="so">
 <head>
     <meta charset="UTF-8">
-    <title>Fadalrewads</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadalrewads - Ku guuleyso Abaalmarinyo!</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #007BFF, #00BFFF);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+        }
+        .question {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .choices button {
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #fff;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .choices button:hover {
+            background-color: #e0e0e0;
+        }
+        .timer {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+        }
+        .continue-btn {
+            display: inline-block;
+            background-color: #fff;
+            color: #007BFF;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .continue-btn:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Fadalrewads</h1>
-        <p>Ku guuleyso abaalmarinyo la yaab leh!</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="faq.html">FAQ</a>
+            <a href="about.html">Nagu Saabsan</a>
+            <a href="contact.html">Xiriir</a>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="blog.html">Blog</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">Nagu Saabsan</a>
-        <a href="contact.html">Xiriir</a>
-    </nav>
+
     <div class="container">
-        
-        <h2>Ka Qeyb Qaado Su’aasha Maanta</h2>
-        <p>Waxaad haysataa 2 daqiiqo iyo 9 ilbiriqsi si aad u hesho hadiyaddaada!</p>
-        <form action="congrats.html">
-            <label>Waa maxay jinsigaaga?</label><br>
-            <input type="radio" name="gender" value="man"> Nin<br>
-            <input type="radio" name="gender" value="woman"> Dumar<br><br>
-            <button type="submit">Sii wad</button>
-        </form>
-    
+        <p class="timer">Ka Qeyb Qaado Su’aasha Maanta<br>
+        Waxaad haysataa 2 daqiiqo iyo 9 ilbiriqsi si aad u hesho hadiyaddaada!</p>
+
+        <p class="question">Waa maxay jinsigaaga?</p>
+        <div class="choices">
+            <button onclick="window.location.href='gifts.html'">👨 Nin</button>
+            <button onclick="window.location.href='gifts.html'">👩 Dumar</button>
+        </div>
+
+        <a class="continue-btn" href="gifts.html">Sii wad</a>
     </div>
+
     <footer>
-        <p>&copy; 2025 Fadalrewads - Dhammaan xuquuqda way xafidan tahay</p>
+        © 2025 Fadalrewads - Dhammaan xuquuqda way xafidan tahay
     </footer>
 </body>
 </html>
