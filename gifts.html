@@ -1,19 +1,86 @@
 <!DOCTYPE html>
 <html lang="so">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Dooro Hadiyaddaada</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dooro Hadiyaddaada</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      margin: 0;
+      padding: 0;
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    }
+    .rewards {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 900px;
+      width: 90%;
+    }
+    .reward-item {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      padding: 1rem;
+      width: 180px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+    .reward-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.35);
+      background: rgba(255, 255, 255, 0.3);
+    }
+    .reward-item img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .reward-item p {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: white;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+      margin: 0;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+    }
+  </style>
 </head>
 <body>
-    <main class="rewards-container">
-        <h2>Dooro Hadiyaddaada</h2>
-        <div class="rewards">
-            <a href="thankyou.html"><img src="https://via.placeholder.com/150?text=Samsung+Phone" alt="Samsung Phone" /></a>
-            <a href="thankyou.html"><img src="https://via.placeholder.com/150?text=$100+Gift+Card" alt="Gift Card" /></a>
-            <a href="thankyou.html"><img src="https://via.placeholder.com/150?text=Hormuud+Lacag" alt="Hormuud Reward" /></a>
-        </div>
-    </main>
+  <h2>Dooro Hadiyaddaada</h2>
+  <div class="rewards">
+    <a href="thankyou.html" class="reward-item">
+      <img src="https://via.placeholder.com/180x150?text=Samsung+Phone" alt="Samsung Phone" />
+      <p>Samsung Phone</p>
+    </a>
+    <a href="thankyou.html" class="reward-item">
+      <img src="https://via.placeholder.com/180x150?text=$100+Gift+Card" alt="Gift Card" />
+      <p>$100 Gift Card</p>
+    </a>
+    <a href="thankyou.html" class="reward-item">
+      <img src="https://via.placeholder.com/180x150?text=Hormuud+Lacag" alt="Hormuud Reward" />
+      <p>Hormuud Lacag</p>
+    </a>
+  </div>
 </body>
 </html>
